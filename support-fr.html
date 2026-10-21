@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stowplay – Assistance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<header>
+<svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#3F684B"/><path d="M6 5h4v14H6z M12 5h3v14h-3z M17 6l2.4 12" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+<div><strong>Stowplay</strong></div>
+</header>
+<nav class="top"><a href="index.html">Accueil</a><a href="privacy-fr.html">Confidentialité</a><a href="support.html">English</a><a href="support-es.html">Español</a></nav>
+<h1>Assistance</h1>
+<p>Questions, signalement de bug ou suggestions : <a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>. Indiquez le modèle de votre téléphone, la version du système et la version de l’app affichée dans les Réglages.</p>
+
+<h2>Ce qu’il vous faut</h2>
+<ul>
+<li>L’app Stowplay sur iPhone, iPad ou Android.</li>
+<li>Le Stowplay Local Agent sur votre propre ordinateur ou NAS, avec accès aux dossiers que vous voulez gérer. L’app ne travaille qu’avec les fichiers que vous y autorisez.</li>
+<li>Un chemin réseau entre le téléphone et l’Agent : le même réseau domestique, ou un outil d’accès à distance privé, comme un VPN, quand vous êtes à l’extérieur.</li>
+</ul>
+<p class="note">Stowplay gère vos propres fichiers et sauvegardes. Il ne télécharge, ne vend ni ne fournit de jeux, et ne contrôle pas les consoles.</p>
+
+<h2>Appairer votre téléphone</h2>
+<ol>
+<li>Lancez l’Agent. Il affiche un QR code d’appairage à usage unique, valable deux minutes.</li>
+<li>Dans l’app, ouvrez Réglages → Connexions → Connecter un nouvel Agent, puis scannez le code.</li>
+<li>Si le code a expiré, générez-en un nouveau sur l’Agent. Les codes expirés ou déjà utilisés sont toujours refusés.</li>
+</ol>
+<h3>L’appareil photo affiche un écran noir</h3>
+<p>iOS coupe l’appareil photo pendant que l’écran du téléphone est consulté ou recopié sur un Mac (par exemple dans une app de gestion d’appareils ou de recopie d’écran). Arrêtez la recopie, puis scannez à nouveau. Vous pouvez aussi utiliser « Ou collez le JSON d’appairage de l’Agent ».</p>
+
+<h2>Utilisation hors de chez vous</h2>
+<p>Stowplay n’expose pas votre Agent sur Internet. Pour vous connecter depuis l’extérieur de votre réseau domestique, utilisez une solution d’accès à distance privée que vous contrôlez (par exemple un VPN). N’ouvrez pas directement le port de l’Agent sur votre box ou votre routeur.</p>
+
+<h2>Notifications</h2>
+<ul>
+<li><strong>Quand l’app est ouverte :</strong> Réglages → Notifications → Activer les notifications système. Vous pouvez choisir les catégories affichées.</li>
+<li><strong>Quand l’app est fermée (facultatif) :</strong> Réglages → Push quand l’app est fermée → Réglages du push. Cochez « Activer le push » et touchez Enregistrer. Installez ensuite l’app gratuite <a href="https://ntfy.sh">ntfy</a> et abonnez-vous à l’adresse affichée. Par défaut, les messages indiquent seulement qu’il y a une nouvelle notification. Gardez le nom du sujet privé ; utilisez « Nouveau nom de sujet » pour le changer.</li>
+</ul>
+
+<h2>Sauvegardes et restaurations</h2>
+<ul>
+<li>Fermez le jeu avant de sauvegarder ou de restaurer, pour que ses fichiers ne changent pas.</li>
+<li>Chaque restauration sauvegarde d’abord la partie actuelle et vérifie chaque fichier ensuite. Si une copie de sauvegarde est endommagée, la restauration est refusée et rien n’est écrasé.</li>
+<li>Si une restauration demande votre attention, choisissez à nouveau une version et consultez l’aperçu. Les anciennes tâches de restauration ne peuvent pas être relancées à l’aveugle.</li>
+</ul>
+
+<h2>Dissocier et supprimer les données</h2>
+<p>Réglages → Connexions → Dissocier l’Agent actuel (l’Agent doit être en ligne). Cela révoque l’accès du téléphone et supprime la connexion locale. Vos fichiers et sauvegardes sur l’Agent ne sont pas supprimés. Voir la <a href="privacy-fr.html">politique de confidentialité</a> pour plus de détails.</p>
+
+<footer>© 2026 zhangwei · Stowplay · <a href="privacy-fr.html">Politique de confidentialité</a></footer>
+</main></body>
+</html>

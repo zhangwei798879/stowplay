@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stowplay – Politique de confidentialité</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<header>
+<svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#3F684B"/><path d="M6 5h4v14H6z M12 5h3v14h-3z M17 6l2.4 12" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+<div><strong>Stowplay</strong></div>
+</header>
+<nav class="top"><a href="index.html">Accueil</a><a href="support-fr.html">Assistance</a><a href="privacy.html">English</a><a href="privacy-es.html">Español</a><a href="privacy-zh.html">中文</a></nav>
+<h1>Politique de confidentialité</h1>
+<p class="muted">Dernière mise à jour : 21 octobre 2026 · S’applique à l’app Stowplay pour iPhone, iPad et Android, ainsi qu’au Stowplay Local Agent. En cas de divergence entre les versions linguistiques, la version anglaise prévaut.</p>
+
+<div class="card"><strong>En bref :</strong> Stowplay fonctionne « local d’abord ». L’app s’utilise avec un Local Agent que <em>vous</em> exécutez sur votre propre ordinateur ou NAS. Le développeur n’exploite aucun service cloud pour l’app, ne crée pas de comptes et ne reçoit ni votre bibliothèque, ni vos fichiers, ni vos sauvegardes, ni vos données d’utilisation. Aucune publicité, aucune mesure d’audience, aucun pistage.</div>
+
+<h2>Qui sommes-nous</h2>
+<p>Stowplay est publié par un développeur individuel, zhangwei. Contact : <a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>.</p>
+
+<h2>Informations traitées par l’app</h2>
+<p>Pour gérer vos propres fichiers de jeu, l’app et votre Local Agent traitent les éléments suivants. Ils sont stockés sur votre téléphone et sur l’Agent appairé, et ne sont pas envoyés au développeur.</p>
+<ul>
+<li><strong>Informations de bibliothèque :</strong> titres des jeux, noms de dossiers et chemins des fichiers, tailles et empreintes des fichiers, notes, jaquettes choisies, noms des appareils et historique des tâches (analyses, transferts, vérifications, sauvegardes et restaurations).</li>
+<li><strong>Sauvegardes de parties :</strong> les copies des fichiers de sauvegarde que vous choisissez de sauvegarder sont conservées par votre Agent dans les dossiers que vous autorisez.</li>
+<li><strong>Clés d’appairage :</strong> une paire de clés et un jeton d’accès permettant à l’app de communiquer avec votre Agent. Sur le téléphone, ils sont conservés dans le stockage sécurisé du système (trousseau iOS ou Android Keystore), uniquement sur cet appareil.</li>
+<li><strong>Réglages :</strong> préférences de langue et de notifications, stockées sur le téléphone.</li>
+</ul>
+
+<h2>Autorisations</h2>
+<ul>
+<li><strong>Appareil photo :</strong> uniquement lorsque vous touchez pour scanner le code d’appairage à usage unique de votre Agent. Rien n’est enregistré ni envoyé. L’app ne demande pas l’accès au micro.</li>
+<li><strong>Réseau local :</strong> pour joindre l’Agent sur votre réseau domestique.</li>
+<li><strong>Photos / fichiers :</strong> uniquement lorsque vous choisissez une image de jaquette ou importez un fichier. Les éléments choisis sont envoyés à votre Agent appairé.</li>
+<li><strong>Notifications (facultatif) :</strong> demandées seulement si vous activez les notifications système dans les Réglages. Elles sont créées sur votre téléphone à partir des résultats de tâches de votre Agent et contiennent une catégorie et un identifiant de tâche court, jamais de chemin de fichier.</li>
+</ul>
+
+<h2>Services que vous choisissez de connecter</h2>
+<p>Stowplay n’envoie pas de données à des tiers de sa propre initiative. Des données ne parviennent à un tiers que si vous en configurez un :</p>
+<ul>
+<li><strong>Accès à distance</strong> (par exemple un VPN comme Tailscale) : il transporte le trafic entre l’app et votre Agent, selon les conditions de ce fournisseur.</li>
+<li><strong>Sources de contenu et stockage distant</strong> ajoutés dans l’Agent (sources de métadonnées HTTPS, SMB/FTP/WebDAV via rclone) : ils reçoivent les requêtes et les fichiers que vous leur envoyez.</li>
+<li><strong>Push lorsque l’app est fermée (facultatif, désactivé par défaut) :</strong> votre Agent peut publier un court message sur un serveur <a href="https://ntfy.sh">ntfy</a> de votre choix, le service public ntfy.sh ou votre propre serveur. Par défaut, le message indique seulement qu’il y a une nouvelle notification, sans nom de jeu, chemin ni compte. L’exploitant du serveur ntfy peut voir le message, l’heure d’envoi et l’adresse IP de votre Agent. Toute personne connaissant votre nom de sujet aléatoire peut lire ces messages : gardez-le privé. Sur iPhone, la livraison passe par le relais de ntfy et par le service de notifications d’Apple.</li>
+<li><strong>Partage :</strong> lorsque vous exportez votre catalogue, le fichier contient des chemins et des noms d’appareils, mais pas de clés d’appairage. Il n’est envoyé qu’à la destination que vous choisissez dans la feuille de partage du système.</li>
+</ul>
+
+<h2>Logiciels tiers dans l’app</h2>
+<p>L’app est construite avec des composants open source, listés dans l’app sous Réglages → Licences tierces. Sur Android, la bibliothèque de notifications inclut le code Google Firebase Messaging. Stowplay n’embarque aucune configuration Firebase : Firebase ne démarre donc pas, ne crée pas de jeton push et ne contacte pas Google. Les autorisations Android dont l’app n’a pas besoin (push distant, origine de l’installation, démarrage et badges) ont été retirées de l’app.</p>
+
+<h2>Sauvegardes et suppression</h2>
+<ul>
+<li>Sur Android, les données privées de l’app sont exclues de la sauvegarde cloud du système et du transfert entre appareils. Sur iOS, le cache du catalogue hors ligne est exclu de la sauvegarde et les clés d’appairage ne sont disponibles que sur cet appareil.</li>
+<li>La dissociation dans l’app révoque l’accès de ce téléphone sur l’Agent et supprime la connexion locale et l’instantané hors ligne. Vos fichiers de jeu et vos sauvegardes ne sont jamais supprimés par la dissociation.</li>
+<li>La désinstallation de l’app supprime ses fichiers du téléphone. Sur iOS, le système peut conserver la clé d’appairage dans le trousseau après la désinstallation : dissociez d’abord si vous voulez révoquer l’accès de ce téléphone sur l’Agent. Les données de votre Agent restent sous votre contrôle ; vous pouvez arrêter l’Agent et supprimer son dossier de données à tout moment.</li>
+</ul>
+
+<h2>Enfants</h2>
+<p>L’app n’a ni comptes, ni messagerie, ni publicité, ni fonctions sociales. Elle n’est pas conçue pour collecter des informations sur les enfants, et le développeur ne collecte d’informations sur personne.</p>
+
+<h2>Vos droits</h2>
+<p>Comme le développeur ne reçoit ni ne conserve vos données personnelles, il n’a aucune donnée à consulter, corriger ou supprimer pour vous. Vos données se trouvent sur vos propres appareils et sur votre Agent, que vous contrôlez. Pour toute question ou demande, écrivez à <a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>.</p>
+
+<h2>Modifications</h2>
+<p>Si l’app ajoute un jour une fonction qui envoie des données au développeur (par exemple des comptes, des rapports de plantage ou des statistiques), cette politique sera mise à jour avant la sortie de cette version, avec une description du changement et une nouvelle date.</p>
+
+<footer>© 2026 zhangwei · Stowplay · <a href="support-fr.html">Assistance</a> · <a href="privacy.html">Privacy Policy (English)</a></footer>
+</main></body>
+</html>
