@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlayCabinet 隐私政策</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<header>
+<svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#3F684B"/><path d="M6 5h4v14H6z M12 5h3v14h-3z M17 6l2.4 12" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+<div><strong>PlayCabinet</strong></div>
+</header>
+<nav class="top"><a href="index.html">首页</a><a href="support.html">支持（英文）</a><a href="privacy.html">English</a></nav>
+<h1>隐私政策</h1>
+<p class="muted">最后更新：2026 年 10 月 21 日 · 适用于 iPhone、iPad、Android 版 PlayCabinet 及 PlayCabinet Local Agent。如中英文版本有出入，以英文版为准。</p>
+
+<div class="card"><strong>简要说明：</strong>PlayCabinet 采用本地优先设计，配合<strong>您自己</strong>在电脑或 NAS 上运行的 Local Agent 使用。开发者不为本应用运营云服务，不设账号，也不接收您的游戏库、文件、存档或使用数据。没有广告、统计分析或跟踪。</div>
+
+<h2>我们是谁</h2>
+<p>PlayCabinet 由个人开发者 zhangwei 发布。联系邮箱：<a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>。</p>
+
+<h2>应用处理的信息</h2>
+<p>为了管理您自己的游戏文件，应用和您的 Local Agent 会处理以下信息。这些信息保存在您的手机和您配对的 Agent 上，不会发送给开发者。</p>
+<ul>
+<li><strong>游戏库信息：</strong>游戏名称、文件夹名称与文件路径、文件大小与校验值、笔记、您选择的封面、设备名称，以及任务记录（扫描、传输、校验、存档备份与恢复）。</li>
+<li><strong>存档备份：</strong>您选择备份的存档副本，由 Agent 保存在您授权的目录中。</li>
+<li><strong>配对密钥：</strong>用于连接 Agent 的密钥对和访问令牌，在手机上保存在系统安全存储中（iOS 钥匙串或 Android Keystore），仅限本机使用。</li>
+<li><strong>设置：</strong>语言、通知偏好，保存在手机上。</li>
+</ul>
+
+<h2>权限</h2>
+<ul>
+<li><strong>相机：</strong>仅在您点击扫描 Agent 的一次性配对码时使用，不录制、不上传。应用不申请麦克风权限。</li>
+<li><strong>本地网络：</strong>用于连接家庭网络中的 Agent。</li>
+<li><strong>照片/文件：</strong>仅在您选择封面图片或导入文件时使用，所选内容会发送到您配对的 Agent。</li>
+<li><strong>通知（可选）：</strong>只有在设置中打开“系统通知”时才会申请。通知由手机根据 Agent 的任务结果在本机生成，内容为类别和任务短编号，不含文件路径。</li>
+</ul>
+
+<h2>您选择连接的服务</h2>
+<p>PlayCabinet 不会主动向第三方发送数据。只有在您自行配置时，数据才会到达第三方：</p>
+<ul>
+<li><strong>远程访问</strong>（例如 Tailscale 这类 VPN）负责应用与 Agent 之间的通信，适用该服务商的条款。</li>
+<li><strong>资料源和远程存储：</strong>您在 Agent 中添加的 HTTPS 资料源、经 rclone 连接的 SMB/FTP/WebDAV 存储，会收到您发给它们的请求和文件。</li>
+<li><strong>应用关闭时的推送（可选，默认关闭）：</strong>Agent 可以向您选择的 <a href="https://ntfy.sh">ntfy</a> 服务器（公共的 ntfy.sh 或您自建的服务器）发送一条简短消息。默认只提示“有新通知”，不含游戏名、路径或账号。ntfy 服务方可以看到消息内容、发送时间和您 Agent 的 IP 地址。知道您随机订阅名的人都能读取这些消息，请勿公开。iPhone 上的送达会经过 ntfy 的中继和 Apple 推送服务。</li>
+<li><strong>分享：</strong>导出的目录文件包含路径和设备名称，不含配对密钥，只会发送到您在系统分享面板中选择的目标。</li>
+</ul>
+
+<h2>应用中的第三方软件</h2>
+<p>应用使用开源组件构建，清单见应用内“设置 → 第三方许可”。Android 版的通知库包含 Google Firebase Messaging 代码。PlayCabinet 没有附带 Firebase 配置，因此 Firebase 不会启动、不会生成推送令牌，也不会连接 Google。应用不使用的 Android 权限（远程推送、安装来源、开机广播、桌面角标）已从应用中移除。</p>
+
+<h2>备份与删除</h2>
+<ul>
+<li>Android 上应用的私有数据不参与系统云备份和设备迁移。iOS 上离线目录缓存已标记为不参与备份，配对密钥仅限本机。</li>
+<li>在应用中解除配对，会在 Agent 上撤销这台手机的访问权限，并移除本机的连接和离线快照。解除配对不会删除您的游戏文件和存档。</li>
+<li>卸载应用会移除它在手机上的文件。iOS 系统可能在卸载后仍保留钥匙串中的配对密钥，如需在 Agent 上撤销这台手机的访问权限，请先解除配对再卸载。Agent 上的数据由您掌控，您可以随时停止 Agent 并删除其数据目录。</li>
+</ul>
+
+<h2>儿童</h2>
+<p>应用没有账号、聊天、广告或社交功能，不以收集儿童信息为目的设计，开发者也不收集任何人的信息。</p>
+
+<h2>您的权利</h2>
+<p>由于开发者不接收、不存储您的个人数据，开发者这边没有可供您查阅、更正或删除的数据。您的数据在您自己的设备和 Agent 上，由您掌控。如有问题或请求，请发邮件至 <a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>。</p>
+
+<h2>政策变更</h2>
+<p>如果今后应用增加会向开发者发送数据的功能（例如账号、崩溃报告或统计分析），会在该版本发布前更新本政策，并在此注明变更内容和新的日期。</p>
+
+<footer>© 2026 zhangwei · PlayCabinet · <a href="support.html">支持</a> · <a href="privacy.html">English Privacy Policy</a></footer>
+</main></body>
+</html>

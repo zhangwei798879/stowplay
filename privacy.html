@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlayCabinet Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<header>
+<svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#3F684B"/><path d="M6 5h4v14H6z M12 5h3v14h-3z M17 6l2.4 12" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+<div><strong>PlayCabinet</strong></div>
+</header>
+<nav class="top"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy-zh.html">中文</a></nav>
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: October 21, 2026 · Applies to the PlayCabinet app for iPhone, iPad and Android, and to the PlayCabinet Local Agent.</p>
+
+<div class="card"><strong>In short:</strong> PlayCabinet is local-first. It works with a Local Agent that <em>you</em> run on your own computer or NAS. The developer does not operate a cloud service for the app, does not have accounts, and does not receive your library, files, saves or usage data. There are no ads, no analytics and no tracking.</div>
+
+<h2>Who we are</h2>
+<p>PlayCabinet is published by an individual developer, zhangwei. Contact: <a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>.</p>
+
+<h2>Information the app handles</h2>
+<p>To manage your own game files, the app and your Local Agent handle the following. It is stored on your phone and on the Agent you paired with. It is not sent to the developer.</p>
+<ul>
+<li><strong>Library information:</strong> game titles, folder names and file paths, file sizes and checksums, notes, covers you choose, device names, and task history (scans, transfers, verifications, save backups and restores).</li>
+<li><strong>Save backups:</strong> copies of save files that you choose to back up are stored by your Agent in the folders you authorize.</li>
+<li><strong>Pairing keys:</strong> a key pair and access token that let the app talk to your Agent. On the phone they are kept in the system secure storage (iOS Keychain or Android Keystore), available only on this device.</li>
+<li><strong>Settings:</strong> language and notification preferences, stored on the phone.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+<li><strong>Camera:</strong> only when you tap to scan your Agent's one-time pairing code. Nothing is recorded or uploaded. The app does not request microphone access.</li>
+<li><strong>Local network:</strong> to reach the Agent on your home network.</li>
+<li><strong>Photos / files:</strong> only when you pick a cover image or import a file. Selected items are sent to your paired Agent.</li>
+<li><strong>Notifications (optional):</strong> only requested if you turn on system notifications in Settings. Notifications are created on your phone from your Agent's task results. They include a category and a short task ID, never file paths.</li>
+</ul>
+
+<h2>Services you choose to connect</h2>
+<p>PlayCabinet does not send data to third parties on its own. Data reaches a third party only when you configure one:</p>
+<ul>
+<li><strong>Remote access</strong> (for example a VPN such as Tailscale) carries the traffic between the app and your Agent, under that provider's terms.</li>
+<li><strong>Content sources and remote storage</strong> that you add in the Agent (HTTPS metadata sources, SMB/FTP/WebDAV through rclone) receive the requests and files that you send to them.</li>
+<li><strong>Push when the app is closed (optional, off by default):</strong> your Agent can post a short message to an <a href="https://ntfy.sh">ntfy</a> server that you choose, either the public ntfy.sh service or your own server. By default the message only says that there is a new notification, with no game names, paths or accounts. The ntfy server operator can see the message, the time it was sent and your Agent's IP address. Anyone who knows your random topic name can read these messages, so keep it private. Delivery to iPhone goes through ntfy's relay and Apple's push service.</li>
+<li><strong>Sharing:</strong> when you export your catalog, the file contains paths and device names, but not pairing keys. It goes only to the destination you pick in the system share sheet.</li>
+</ul>
+
+<h2>Third-party software in the app</h2>
+<p>The app is built with open-source components, listed in the app under Settings → Third-party licenses. On Android, the notification library includes Google Firebase Messaging code. PlayCabinet ships no Firebase configuration, so Firebase does not start, does not create a push token and does not contact Google. Android permissions that this app does not use (remote push, install referrer, boot and badge permissions) are removed from the app.</p>
+
+<h2>Backups and deletion</h2>
+<ul>
+<li>The app's private data on Android is excluded from system cloud backup and device transfer. On iOS, the offline catalog cache is marked as excluded from backup, and pairing keys are available only on this device.</li>
+<li>Unpairing in the app revokes this phone's access on the Agent and removes the local connection and offline snapshot. Your game files and saves are never deleted by unpairing.</li>
+<li>Uninstalling the app removes its files from the phone. On iOS, the system may keep the pairing key in the Keychain after uninstalling, so unpair first if you want this phone's access revoked on the Agent. Data on your Agent stays under your control; you can stop the Agent and delete its data folder at any time.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The app has no accounts, chat, ads or social features. It is not designed to collect information from children, and the developer does not collect information from anyone.</p>
+
+<h2>Your rights</h2>
+<p>Because the developer does not receive or store your personal data, there is nothing for the developer to access, correct or delete on your behalf. Your data is on your own devices and Agent, which you control. If you have a question or a request, email <a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>.</p>
+
+<h2>Changes</h2>
+<p>If the app ever adds a feature that sends data to the developer (for example accounts, crash reporting or analytics), this policy will be updated before that version is released, and the change will be described here with a new date.</p>
+
+<footer>© 2026 zhangwei · PlayCabinet · <a href="support.html">Support</a> · <a href="privacy-zh.html">中文版隐私政策</a></footer>
+</main></body>
+</html>

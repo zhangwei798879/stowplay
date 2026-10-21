@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlayCabinet Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<header>
+<svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#3F684B"/><path d="M6 5h4v14H6z M12 5h3v14h-3z M17 6l2.4 12" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+<div><strong>PlayCabinet</strong></div>
+</header>
+<nav class="top"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="privacy-zh.html">中文隐私政策</a></nav>
+<h1>Support</h1>
+<p>Questions, bug reports or feedback: <a href="mailto:zhangwei798879@gmail.com">zhangwei798879@gmail.com</a>. Please include your phone model, OS version and the app version from Settings.</p>
+
+<h2>What you need</h2>
+<ul>
+<li>The PlayCabinet app on iPhone, iPad or Android.</li>
+<li>The PlayCabinet Local Agent running on your own computer or NAS, with access to the folders you want to manage. The app only works with files you authorize there.</li>
+<li>A network path from the phone to the Agent: the same home network, or a private remote-access tool such as a VPN when you are away.</li>
+</ul>
+<p class="note">PlayCabinet manages your own files and saves. It does not download, sell or provide games, and it does not control game consoles.</p>
+
+<h2>Pairing your phone</h2>
+<ol>
+<li>Start the Agent. It shows a one-time pairing QR code that is valid for two minutes.</li>
+<li>In the app, open Settings → Connections → Connect new Agent, and scan the code.</li>
+<li>If the code has expired, generate a new one on the Agent. Expired or used codes are always refused.</li>
+</ol>
+<h3>The camera shows a black screen</h3>
+<p>iOS turns off the camera while the phone's screen is being viewed or mirrored on a Mac (for example in a device-management or screen-mirroring app). Stop the mirroring, then scan again. You can also paste the pairing JSON from the Agent instead.</p>
+
+<h2>Using it away from home</h2>
+<p>Your Agent is not exposed to the internet by PlayCabinet. To connect from outside your home network, use a private remote-access solution that you control (for example a VPN). Do not open the Agent port directly on your router.</p>
+
+<h2>Notifications</h2>
+<ul>
+<li><strong>While the app is open:</strong> Settings → Notifications → Turn on system notifications. You can choose which categories to show.</li>
+<li><strong>When the app is closed (optional):</strong> Settings → Push when the app is closed → Push settings. Turn on "Enable push" and tap Save. Then install the free <a href="https://ntfy.sh">ntfy</a> app and subscribe to the address shown. By default messages only say that there is a new notification. Keep the topic name private; use "New topic name" to change it.</li>
+</ul>
+
+<h2>Saves and restores</h2>
+<ul>
+<li>Close the game before backing up or restoring, so its files are not changing.</li>
+<li>Every restore first backs up the current save and checks every file afterwards. If a backup copy is damaged, the restore is refused and nothing is overwritten.</li>
+<li>If a restore needs attention, choose a version again and review the preview. Old restore tasks cannot be retried blindly.</li>
+</ul>
+
+<h2>Unpairing and removing data</h2>
+<p>Settings → Connections → Unpair current Agent (the Agent must be online). This revokes the phone's access and removes the local connection. Your files and saves on the Agent are not deleted. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+<footer>© 2026 zhangwei · PlayCabinet · <a href="privacy.html">Privacy Policy</a></footer>
+</main></body>
+</html>
