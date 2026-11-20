@@ -23,6 +23,12 @@
 </ul>
 <p class="note">Stowplay administra tus propios archivos y partidas guardadas. No descarga, vende ni proporciona juegos, y no controla consolas.</p>
 
+<h2 id="install">Instalar el Agent</h2>
+<p><strong>NAS o cualquier equipo con Docker:</strong> descarga <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/compose.yaml"><code>compose.yaml</code></a> y <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/env.example"><code>env.example</code></a>, guarda este último como <code>.env</code>, escribe tus IDs de usuario y grupo, la dirección del NAS y tus carpetas, y ejecuta <code>docker compose up -d</code>. Para emparejar: <code>docker compose exec agent stowplay-pair</code> y escanea el código. Para actualizar: <code>docker compose pull &amp;&amp; docker compose up -d</code>.</p>
+<p><strong>Windows 10/11 (64 bits):</strong> descarga <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/StowplayAgent-0.1.0-win-x64.zip">StowplayAgent-0.1.0-win-x64.zip</a>, descomprímelo y haz doble clic en <code>Install Stowplay Agent.cmd</code>. Elige tus carpetas de juegos (solo lectura) y de partidas guardadas, permite el aviso del Firewall de Windows y escanea el código QR que aparece.</p>
+<p><strong>Mac (macOS 12 o posterior, Apple silicon e Intel):</strong> descarga <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/StowplayAgent-0.1.0-macos.zip">StowplayAgent-0.1.0-macos.zip</a>, descomprímelo y haz doble clic en <code>Install Stowplay Agent.command</code>. La primera vez, macOS puede bloquearlo porque aún no está notarizado: abre Configuración del Sistema → Privacidad y seguridad y haz clic en «Abrir igualmente».</p>
+<p>Todos los archivos y sumas de verificación: <a href="https://github.com/zhangwei798879/stowplay/releases/tag/agent-v0.1.0">versión Stowplay Agent 0.1.0</a>. El Agent es gratuito.</p>
+
 <h2>Emparejar tu teléfono</h2>
 <ol>
 <li>Inicia el Agent. Muestra un código QR de emparejamiento de un solo uso, válido por dos minutos.</li>
