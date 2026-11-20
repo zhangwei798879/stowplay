@@ -23,6 +23,12 @@
 </ul>
 <p class="note">Stowplay manages your own files and saves. It does not download, sell or provide games, and it does not control game consoles.</p>
 
+<h2 id="install">Install the Agent</h2>
+<p><strong>NAS or any Docker host:</strong> download <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/compose.yaml"><code>compose.yaml</code></a> and <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/env.example"><code>env.example</code></a>, save the second file as <code>.env</code> <code>.env.example</code> to <code>.env</code>, enter your user/group IDs, the NAS address and your folders, then run <code>docker compose up -d</code>. To pair, run <code>docker compose exec agent stowplay-pair</code> and scan the code. Update later with <code>docker compose pull &amp;&amp; docker compose up -d</code>.</p>
+<p><strong>Windows 10/11 (64-bit):</strong> download <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/StowplayAgent-0.1.0-win-x64.zip">StowplayAgent-0.1.0-win-x64.zip</a>, unzip it and double-click <code>Install Stowplay Agent.cmd</code>. Choose your game folders (read-only) and your save folders, allow the Windows Firewall prompt, then scan the QR code that opens.</p>
+<p><strong>Mac (macOS 12 or later, Apple silicon and Intel):</strong> download <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/StowplayAgent-0.1.0-macos.zip">StowplayAgent-0.1.0-macos.zip</a>, unzip it and double-click <code>Install Stowplay Agent.command</code>. The first time, macOS may block it because it is not notarized yet: open System Settings → Privacy &amp; Security and click “Open Anyway”.</p>
+<p>All files, checksums and notes: <a href="https://github.com/zhangwei798879/stowplay/releases/tag/agent-v0.1.0">Stowplay Agent 0.1.0 release</a>. The Agent is free.</p>
+
 <h2>Pairing your phone</h2>
 <ol>
 <li>Start the Agent. It shows a one-time pairing QR code that is valid for two minutes.</li>
