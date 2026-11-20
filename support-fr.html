@@ -23,6 +23,12 @@
 </ul>
 <p class="note">Stowplay gère vos propres fichiers et sauvegardes. Il ne télécharge, ne vend ni ne fournit de jeux, et ne contrôle pas les consoles.</p>
 
+<h2 id="install">Installer l’Agent</h2>
+<p><strong>NAS ou tout hôte Docker :</strong> téléchargez <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/compose.yaml"><code>compose.yaml</code></a> et <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/env.example"><code>env.example</code></a>, enregistrez ce dernier sous le nom <code>.env</code>, indiquez vos identifiants d’utilisateur et de groupe, l’adresse du NAS et vos dossiers, puis lancez <code>docker compose up -d</code>. Pour appairer : <code>docker compose exec agent stowplay-pair</code>, puis scannez le code. Mise à jour : <code>docker compose pull &amp;&amp; docker compose up -d</code>.</p>
+<p><strong>Windows 10/11 (64 bits) :</strong> téléchargez <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/StowplayAgent-0.1.0-win-x64.zip">StowplayAgent-0.1.0-win-x64.zip</a>, décompressez-le et double-cliquez sur <code>Install Stowplay Agent.cmd</code>. Choisissez vos dossiers de jeux (lecture seule) et de sauvegardes, autorisez le pare-feu Windows, puis scannez le code QR affiché.</p>
+<p><strong>Mac (macOS 12 ou ultérieur, Apple silicon et Intel) :</strong> téléchargez <a href="https://github.com/zhangwei798879/stowplay/releases/download/agent-v0.1.0/StowplayAgent-0.1.0-macos.zip">StowplayAgent-0.1.0-macos.zip</a>, décompressez-le et double-cliquez sur <code>Install Stowplay Agent.command</code>. La première fois, macOS peut le bloquer car il n’est pas encore notarié : ouvrez Réglages Système → Confidentialité et sécurité et cliquez sur « Ouvrir quand même ».</p>
+<p>Tous les fichiers et sommes de contrôle : <a href="https://github.com/zhangwei798879/stowplay/releases/tag/agent-v0.1.0">version Stowplay Agent 0.1.0</a>. L’Agent est gratuit.</p>
+
 <h2>Appairer votre téléphone</h2>
 <ol>
 <li>Lancez l’Agent. Il affiche un QR code d’appairage à usage unique, valable deux minutes.</li>
